@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'UD デジタル 教科書体 N-R';
+  text-align: center;
+}
+
+.wrap {
+  margin: 5px 0 50px;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 2em;
+}
+
+.overview {
+  margin-bottom: 40px;
+}
+
+.overview-top {
+  font-size: 1.5em;
+}
+
+.overview-item {
+  font-size: 1.2em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+form p[style] {
+  font-size: 1.1em;
+}
+
+form > div {
+  margin-bottom: 30px;
+}
+
+form input[type="text"] {
+  background: rgba(169, 209, 255, 0.7);
+  font-size: 1.5em;
+  outline: none;
+  margin: 5px 0;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+form input[type="text"]:focus {
+  background: rgba(169, 209, 255, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+form input::placeholder {
+  color: rgb(150, 150, 150);
+}
+
+form input[name*="student"] {
+  width: 6rem;
+}
+
+form input[name*="birthday"] {
+  width: 9rem;
+}
+
+form button {
+  font-size: 1.3em;
+  font-family: 'UD デジタル 教科書体 N-R';
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgb(43, 121, 236);
+}
+
+form button:active {
+  background: rgb(90, 151, 241);
+}
+
+.msg {
+  font-size: 1.5em;
+}
+
+/*--------------------
+  error.php 
+--------------------*/
+.error {
+  padding: 30px;
+}
+
+.error p {
+  font-size: 1.3em;
+  padding-bottom: 10px;
+}
+
+.error input[type="text"] {
+  background: rgba(169, 209, 255, 0.7);
+  font-size: 1.3em;
+  outline: none;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.error button {
+  font-size: 1.3em;
+  font-family: 'UD デジタル 教科書体 N-R';
+  padding: 5px 10px;
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 10px;
+  outline: none;
+  background: rgb(43, 121, 236);
+}
+
+form button:active {
+  background: rgb(90, 151, 241);
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 5.5em;
+    line-height: 2em;
+  }
+  .overview-top {
+    font-size: 2.5em;
+  }
+  .overview-item {
+    font-size: 1.5em;
+  }
+  label {
+    font-size: 1.6em;
+  }
+  form p[style] {
+    font-size: 1.5em;
+  }
+  form input[type="text"] {
+    font-size: 3em;
+    padding: 10px;
+  }
+  form input[name*="student"] {
+    width: 12rem;
+  }
+  form input[name*="birthday"] {
+    width: 18rem;
+  }
+  form button {
+    font-size: 2em;
+    padding: 10px 15px;
+  }
+  .msg {
+    font-size: 2em;
+  }
+  /*--------------------
+    error.php 
+  --------------------*/
+  .error {
+    padding: 30px;
+  }
+  .error p {
+    font-size: 1.7em;
+    padding-bottom: 20px;
+  }
+  .error input[type="text"] {
+    font-size: 2em;
+    margin: 5px 0;
+    padding: 5px;
+  }
+  .error button {
+    font-size: 2em;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  h1 {
+    font-size: 5em;
+    line-height: 2em;
+  }
+  .overview-top {
+    font-size: 2.5em;
+  }
+  .overview-item {
+    font-size: 1.5em;
+  }
+  label {
+    font-size: 1.6em;
+  }
+  form p[style] {
+    font-size: 1.5em;
+  }
+  form input[type="text"] {
+    font-size: 3em;
+    padding: 10px;
+  }
+  form input[name*="student"] {
+    width: 12rem;
+  }
+  form input[name*="birthday"] {
+    width: 18rem;
+  }
+  form button {
+    font-size: 2em;
+    padding: 10px 15px;
+  }
+  .msg {
+    font-size: 2em;
+  }
+  /*--------------------
+    error.php 
+  --------------------*/
+  .error {
+    padding: 30px;
+  }
+  .error p {
+    font-size: 1.5em;
+    padding-bottom: 15px;
+  }
+  .error input[type="text"] {
+    background: rgba(169, 209, 255, 0.7);
+    font-size: 2em;
+    outline: none;
+    margin: 5px 0 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .error button {
+    font-size: 2em;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) and (orientation:portrait){
+  h1 {
+    font-size: 3.5em;
+    line-height: 2em;
+  }
+  .overview-top {
+    font-size: 2.2em;
+  }
+  .overview-item {
+    font-size: 1.3em;
+  }
+  label {
+    font-size: 1.5em;
+  }
+  form p[style] {
+    font-size: 1.5em;
+  }
+  form input[type="text"] {
+    font-size: 2.5em;
+    padding: 10px;
+  }
+  form input[name*="student"] {
+    width: 12rem;
+  }
+  form input[name*="birthday"] {
+    width: 18rem;
+  }
+  form button {
+    font-size: 2em;
+    padding: 10px 15px;
+  }
+  .msg {
+    font-size: 1.5em;
+  }
+  /*--------------------
+    error.php 
+  --------------------*/
+  .error {
+    padding: 30px;
+  }
+  .error p {
+    font-size: 1.5em;
+    padding-bottom: 15px;
+  }
+  .error input[type="text"] {
+    font-size: 1.5em;
+    margin: 5px 0 15px;
+    padding: 5px;
+  }
+  .error button {
+    font-size: 2em;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 3em;
+    line-height: 2em;
+  }
+  .overview-top {
+    font-size: 2em;
+  }
+  .overview-item {
+    font-size: 1.2em;
+  }
+  label {
+    font-size: 1.3em;
+  }
+  form p[style] {
+    font-size: 1.2em;
+  }
+  form input[type="text"] {
+    font-size: 2em;
+    padding: 10px;
+  }
+  form input[name*="student"] {
+    width: 12rem;
+  }
+  form input[name*="birthday"] {
+    width: 18rem;
+  }
+  form button {
+    font-size: 2em;
+    padding: 10px 15px;
+  }
+  .msg {
+    font-size: 1.3em;
+  }
+  /*--------------------
+    error.php 
+  --------------------*/
+  .error {
+    padding: 15px;
+  }
+  .error p {
+    font-size: 1.3em;
+    padding-bottom: 15px;
+  }
+  .error input[type="text"] {
+    font-size: 1.3em;
+    margin: 5px 0 10px;
+    padding: 5px;
+  }
+  .error button {
+    font-size: 1.5em;
+    padding: 5px;
+  }
+}
